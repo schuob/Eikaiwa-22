@@ -67,7 +67,6 @@ class MainViewController: UITableViewController, UITableViewDataSource, UITableV
         }
     }
 
-    // this is require to make prepareForSegue to work for some reason
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         let row = indexPath.row
