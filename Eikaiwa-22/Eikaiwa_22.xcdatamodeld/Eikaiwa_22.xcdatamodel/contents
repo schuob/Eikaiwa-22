@@ -1,4 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="14C1510" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="LessonET" representedClassName="" syncable="YES">
+        <attribute name="lesson_key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="meaning" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="origin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phrase" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="QuestionsET" syncable="YES">
+        <attribute name="answer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lesson_key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="option_1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="option_2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="question_key" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="StudyET" syncable="YES">
+        <attribute name="in_conversation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="in_text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lesson_key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sentences" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="LessonET" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="QuestionsET" positionX="-54" positionY="-9" width="128" height="28"/>
+        <element name="StudyET" positionX="-36" positionY="9" width="128" height="28"/>
+    </elements>
 </model>

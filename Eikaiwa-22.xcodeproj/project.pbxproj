@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9739BDD1AB28F8F00617657 /* LessonDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9739BDC1AB28F8F00617657 /* LessonDetailsViewController.swift */; };
 		D99FB04A1AAAA68000057C07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99FB0491AAAA68000057C07 /* AppDelegate.swift */; };
 		D99FB04D1AAAA68000057C07 /* Eikaiwa_22.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D99FB04B1AAAA68000057C07 /* Eikaiwa_22.xcdatamodeld */; };
-		D99FB04F1AAAA68000057C07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99FB04E1AAAA68000057C07 /* ViewController.swift */; };
+		D99FB04F1AAAA68000057C07 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99FB04E1AAAA68000057C07 /* MainViewController.swift */; };
 		D99FB0521AAAA68000057C07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99FB0501AAAA68000057C07 /* Main.storyboard */; };
 		D99FB0541AAAA68000057C07 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99FB0531AAAA68000057C07 /* Images.xcassets */; };
 		D99FB0571AAAA68000057C07 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D99FB0551AAAA68000057C07 /* LaunchScreen.xib */; };
@@ -27,11 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D9739BDC1AB28F8F00617657 /* LessonDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonDetailsViewController.swift; sourceTree = "<group>"; };
 		D99FB0441AAAA68000057C07 /* Eikaiwa-22.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eikaiwa-22.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99FB0481AAAA68000057C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D99FB0491AAAA68000057C07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D99FB04C1AAAA68000057C07 /* Eikaiwa_22.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Eikaiwa_22.xcdatamodel; sourceTree = "<group>"; };
-		D99FB04E1AAAA68000057C07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D99FB04E1AAAA68000057C07 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D99FB0511AAAA68000057C07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D99FB0531AAAA68000057C07 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D99FB0561AAAA68000057C07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -79,12 +81,13 @@
 		D99FB0461AAAA68000057C07 /* Eikaiwa-22 */ = {
 			isa = PBXGroup;
 			children = (
-				D99FB0491AAAA68000057C07 /* AppDelegate.swift */,
-				D99FB04E1AAAA68000057C07 /* ViewController.swift */,
+				D99FB04B1AAAA68000057C07 /* Eikaiwa_22.xcdatamodeld */,
 				D99FB0501AAAA68000057C07 /* Main.storyboard */,
+				D9739BDC1AB28F8F00617657 /* LessonDetailsViewController.swift */,
+				D99FB0491AAAA68000057C07 /* AppDelegate.swift */,
+				D99FB04E1AAAA68000057C07 /* MainViewController.swift */,
 				D99FB0531AAAA68000057C07 /* Images.xcassets */,
 				D99FB0551AAAA68000057C07 /* LaunchScreen.xib */,
-				D99FB04B1AAAA68000057C07 /* Eikaiwa_22.xcdatamodeld */,
 				D99FB0471AAAA68000057C07 /* Supporting Files */,
 			);
 			path = "Eikaiwa-22";
@@ -215,9 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D99FB04F1AAAA68000057C07 /* ViewController.swift in Sources */,
+				D99FB04F1AAAA68000057C07 /* MainViewController.swift in Sources */,
 				D99FB04A1AAAA68000057C07 /* AppDelegate.swift in Sources */,
 				D99FB04D1AAAA68000057C07 /* Eikaiwa_22.xcdatamodeld in Sources */,
+				D9739BDD1AB28F8F00617657 /* LessonDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +413,7 @@
 				D99FB0681AAAA68000057C07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D99FB0691AAAA68000057C07 /* Build configuration list for PBXNativeTarget "Eikaiwa-22Tests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				D99FB06B1AAAA68000057C07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
