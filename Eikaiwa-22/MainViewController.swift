@@ -5,7 +5,6 @@
 //  Created by Steven Chuob on 3/6/15.
 //  Copyright (c) 2015 infinitejester. All rights reserved.
 //
-
 import UIKit
 import CoreData
 
@@ -39,7 +38,6 @@ class MainViewController: UITableViewController, UITableViewDataSource, UITableV
         tableView.delegate = self
         tableView.dataSource = self
         title = "Eikaiwa 22"
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "lessonCell")
     }
     
     // MARK: UITableViewDataSource
@@ -48,7 +46,7 @@ class MainViewController: UITableViewController, UITableViewDataSource, UITableV
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("lessonCell") as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("LessonCell") as UITableViewCell
         let lessonObj = lessonsNSMObj[indexPath.row]
         println(lessonObj.valueForKey("phrase") as String!)
         cell.textLabel!.text = lessonObj.valueForKey("phrase") as String?
@@ -56,20 +54,15 @@ class MainViewController: UITableViewController, UITableViewDataSource, UITableV
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let cell = sender as UITableViewCell
         if segue.identifier == "showLesson" {
             var tabBarVC: UITabBarController = segue.destinationViewController as UITabBarController
             //var descVC: LessonsDetailsViewController = segue.destinationViewController as LessonsDetailsViewController
             var descVC: LessonsDetailsViewController = tabBarVC.viewControllers?.first as LessonsDetailsViewController
-            var row = sender as Int
-            //var row = tableView!.indexPathForSelectedRow()!.row
-            var dataObj = lessonsNSMObj[row]
+            //var row = sender as Int
+            var row = self.tableView.indexPathForCell(cell)?.row
+            var dataObj = lessonsNSMObj[row!]
             descVC.managedObject = dataObj
         }
-    }
-
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        let row = indexPath.row
-        performSegueWithIdentifier("showLesson", sender: row)
     }
 }

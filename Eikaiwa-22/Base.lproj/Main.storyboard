@@ -20,7 +20,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F4S-iM-Kie" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1236" y="463"/>
+            <point key="canvasLocation" x="-2442" y="475"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="xOa-n5-1sR">
@@ -45,7 +45,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Ffh-K3-7CA" kind="show" identifier="showLesson" id="vtT-75-q1X"/>
+                                    <segue destination="Ffh-K3-7CA" kind="showDetail" identifier="showLesson" id="vtT-75-q1X"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -58,7 +58,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CyI-j4-N1u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-472" y="463"/>
+            <point key="canvasLocation" x="-1580" y="475"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="LiC-w1-dUl">
@@ -72,14 +72,14 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="oZo-V8-7bn" kind="relationship" relationship="viewControllers" id="pRl-VE-Zey"/>
+                        <segue destination="oZo-V8-7bn" kind="relationship" relationship="viewControllers" id="jZY-BT-ncM"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xgz-Ja-kX8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="222" y="463"/>
+            <point key="canvasLocation" x="-752" y="475"/>
         </scene>
-        <!--Item-->
+        <!--Eikaiwa 22-->
         <scene sceneID="BSc-xi-bot">
             <objects>
                 <viewController id="oZo-V8-7bn" customClass="LessonsDetailsViewController" customModule="Eikaiwa_22" customModuleProvider="target" sceneMemberID="viewController">
@@ -101,13 +101,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="rn0-OX-SNw"/>
+                    <navigationItem key="navigationItem" title="Eikaiwa 22" id="ZUu-bR-k7Y"/>
                     <connections>
                         <outlet property="lessonPhrase" destination="Mch-Qs-Fon" id="YNF-Lg-Fr0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sGX-gR-rlK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="952" y="463"/>
+            <point key="canvasLocation" x="79" y="475"/>
         </scene>
     </scenes>
 </document>
