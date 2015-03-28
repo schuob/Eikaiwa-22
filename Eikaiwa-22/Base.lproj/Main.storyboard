@@ -91,7 +91,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mch-Qs-Fon">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mch-Qs-Fon">
                                 <rect key="frame" x="279" y="77" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -99,6 +99,11 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Z3D-5N-nS7" firstAttribute="top" secondItem="Mch-Qs-Fon" secondAttribute="bottom" constant="453" id="WlE-h4-nXw"/>
+                            <constraint firstItem="Mch-Qs-Fon" firstAttribute="centerX" secondItem="uyv-NR-tXj" secondAttribute="centerX" id="mPH-nX-Ewj"/>
+                            <constraint firstItem="Mch-Qs-Fon" firstAttribute="top" secondItem="AwG-vK-MOo" secondAttribute="bottom" constant="57" id="oKa-dM-nil"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="rn0-OX-SNw"/>
                     <navigationItem key="navigationItem" title="Eikaiwa 22" id="ZUu-bR-k7Y"/>

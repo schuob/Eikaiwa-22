@@ -37,6 +37,8 @@ class MainViewController: UITableViewController, UITableViewDataSource, UITableV
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        self.tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.estimatedRowHeight = 44.0
         title = "Eikaiwa 22"
     }
     
