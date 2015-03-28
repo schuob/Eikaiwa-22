@@ -59,9 +59,8 @@ class MainViewController: UITableViewController, UITableViewDataSource, UITableV
         let cell = sender as UITableViewCell
         if segue.identifier == "showLesson" {
             var tabBarVC: UITabBarController = segue.destinationViewController as UITabBarController
-            //var descVC: LessonsDetailsViewController = segue.destinationViewController as LessonsDetailsViewController
-            var descVC: LessonsDetailsViewController = tabBarVC.viewControllers?.first as LessonsDetailsViewController
-            //var row = sender as Int
+            var navVC: UINavigationController = tabBarVC.viewControllers?.first as UINavigationController
+            var descVC: LessonsDetailsViewController = navVC.viewControllers.first as LessonsDetailsViewController
             var row = self.tableView.indexPathForCell(cell)?.row
             var dataObj = lessonsNSMObj[row!]
             descVC.managedObject = dataObj
