@@ -58,9 +58,11 @@ class MainViewController: UITableViewController, UITableViewDataSource, UITableV
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let cell = sender as UITableViewCell
         if segue.identifier == "showLesson" {
-            var tabBarVC: UITabBarController = segue.destinationViewController as UITabBarController
-            var navVC: UINavigationController = tabBarVC.viewControllers?.first as UINavigationController
-            var descVC: LessonsDetailsViewController = navVC.viewControllers.first as LessonsDetailsViewController
+            // setting up the navigation transition
+            var navVC: UINavigationController = segue.destinationViewController as UINavigationController
+            var tabBarVC: UITabBarController = navVC.viewControllers.first as UITabBarController
+            var descVC: LessonsDetailsViewController = tabBarVC.viewControllers?.first as LessonsDetailsViewController
+            
             var row = self.tableView.indexPathForCell(cell)?.row
             var dataObj = lessonsNSMObj[row!]
             descVC.managedObject = dataObj
