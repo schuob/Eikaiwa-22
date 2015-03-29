@@ -60,6 +60,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D90F9F6F1AC8C07D00985EDD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D99FB04B1AAAA68000057C07 /* Eikaiwa_22.xcdatamodeld */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D90F9F701AC8C09400985EDD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D9739BDC1AB28F8F00617657 /* LessonDetailsViewController.swift */,
+				D99FB04E1AAAA68000057C07 /* MainViewController.swift */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		D90F9F711AC8C0A800985EDD /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D99FB0491AAAA68000057C07 /* AppDelegate.swift */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		D90F9F721AC8C0B800985EDD /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D99FB0501AAAA68000057C07 /* Main.storyboard */,
+				D99FB0531AAAA68000057C07 /* Images.xcassets */,
+				D99FB0551AAAA68000057C07 /* LaunchScreen.xib */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
 		D99FB03B1AAAA68000057C07 = {
 			isa = PBXGroup;
 			children = (
@@ -81,13 +116,10 @@
 		D99FB0461AAAA68000057C07 /* Eikaiwa-22 */ = {
 			isa = PBXGroup;
 			children = (
-				D99FB04B1AAAA68000057C07 /* Eikaiwa_22.xcdatamodeld */,
-				D99FB0501AAAA68000057C07 /* Main.storyboard */,
-				D9739BDC1AB28F8F00617657 /* LessonDetailsViewController.swift */,
-				D99FB0491AAAA68000057C07 /* AppDelegate.swift */,
-				D99FB04E1AAAA68000057C07 /* MainViewController.swift */,
-				D99FB0531AAAA68000057C07 /* Images.xcassets */,
-				D99FB0551AAAA68000057C07 /* LaunchScreen.xib */,
+				D90F9F721AC8C0B800985EDD /* Resource */,
+				D90F9F711AC8C0A800985EDD /* Application */,
+				D90F9F701AC8C09400985EDD /* Shared */,
+				D90F9F6F1AC8C07D00985EDD /* Models */,
 				D99FB0471AAAA68000057C07 /* Supporting Files */,
 			);
 			path = "Eikaiwa-22";
