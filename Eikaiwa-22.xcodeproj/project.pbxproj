@@ -85,14 +85,14 @@
 			name = Application;
 			sourceTree = "<group>";
 		};
-		D90F9F721AC8C0B800985EDD /* Resource */ = {
+		D90F9F721AC8C0B800985EDD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				D99FB0501AAAA68000057C07 /* Main.storyboard */,
 				D99FB0531AAAA68000057C07 /* Images.xcassets */,
 				D99FB0551AAAA68000057C07 /* LaunchScreen.xib */,
 			);
-			name = Resource;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		D99FB03B1AAAA68000057C07 = {
@@ -116,7 +116,7 @@
 		D99FB0461AAAA68000057C07 /* Eikaiwa-22 */ = {
 			isa = PBXGroup;
 			children = (
-				D90F9F721AC8C0B800985EDD /* Resource */,
+				D90F9F721AC8C0B800985EDD /* Resources */,
 				D90F9F711AC8C0A800985EDD /* Application */,
 				D90F9F701AC8C09400985EDD /* Shared */,
 				D90F9F6F1AC8C07D00985EDD /* Models */,
