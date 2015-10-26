@@ -48,10 +48,10 @@ OP_ATTR = {
 sep_re = re.compile(r'\s*(%s|%s|%s|%s|%s|%s)\s*' % (
     re.escape(OP_SPACE),
     re.escape(OP_EQUAL),
-	re.escape(OP_PLUS),
-	re.escape(OP_MINUS),
-	re.escape(OP_MULT),
-	re.escape(OP_DIV)))
+    re.escape(OP_PLUS),
+    re.escape(OP_MINUS),
+    re.escape(OP_MULT),
+    re.escape(OP_DIV)))
 
 ## **********************************************************************
 ## @tokenize(string)
@@ -59,7 +59,7 @@ sep_re = re.compile(r'\s*(%s|%s|%s|%s|%s|%s)\s*' % (
 ## single value and storing them into a list
 ## **********************************************************************
 def tokenize(expr):
-	return [t.strip() for t in sep_re.split(expr.strip()) if t]
+    return [t.strip() for t in sep_re.split(expr.strip()) if t]
 
 
 ## **********************************************************************
